@@ -22,4 +22,9 @@ def lucas(n):
     """
     takes in a number n, returns the nth value in the lucas sequence of numbers
     """
-    return "hello"
+    if n == 0:
+        return 2
+    elif n == 1:
+        return 1
+    else:
+        return lucas(n-1) + lucas(n-2)
